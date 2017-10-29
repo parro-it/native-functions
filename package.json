@@ -1,6 +1,6 @@
 {
   "name": "native-functions",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Native js prototypes converted to ramda-like functions",
   "repository": "parro-it/native-functions",
   "author": "Andrea Parodi <andrea@parro.it>",
