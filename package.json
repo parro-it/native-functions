@@ -1,11 +1,15 @@
 {
   "name": "native-functions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Native js prototypes converted to ramda-like functions",
   "repository": "parro-it/native-functions",
   "author": "Andrea Parodi <andrea@parro.it>",
   "license": "MIT",
-  "files": ["index.js", "strings.js", "example.js"],
+  "files": [
+    "index.js",
+    "strings.js",
+    "example.js"
+  ],
   "scripts": {
     "test": "ava && linterjs .",
     "dev": "ava --watch & linterjs . --watch",
@@ -18,7 +22,9 @@
   "keywords": [],
   "tonicExampleFilename": "example.js",
   "ava": {
-    "require": ["@std/esm"]
+    "require": [
+      "@std/esm"
+    ]
   },
   "@std/esm": {
     "esm": "js",
