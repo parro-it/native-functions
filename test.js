@@ -1,5 +1,5 @@
 import test from "ava";
-import { replace, trim, toUpperCase } from "./strings";
+import { replace, trim, toUpperCase, startsWith } from "./strings";
 
 test("replace - is curried", t => {
   const unBlank = replace(/\s/g);
@@ -57,4 +57,16 @@ test("toUpperCase - work with multiple types", t => {
   supportType(true, "TRUE", t);
   supportType([" a", 42, 43], " A,42,43", t);
   supportType({ toString: () => " ciao" }, " CIAO", t);
+});
+
+test("startsWith", t => {
+  const supportType = (value, expected, t) => {
+    const res = startsWith("t", value);
+    t.is(res, expected);
+  };
+  supportType("t", true, t);
+  supportType(422, false, t);
+  supportType(true, true, t);
+  supportType(["t", 42, 43], true, t);
+  supportType({ toString: () => "t" }, true, t);
 });
