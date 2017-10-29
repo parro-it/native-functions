@@ -1,3 +1,3 @@
-const $package_var = require("$package_name");
+const nativeFunctions = require("native-functions");
 
-console.log({ $package_var });
+console.log({ nativeFunctions });
