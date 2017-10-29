@@ -1,3 +1,1 @@
-export default function nativeFunctions() {
-  return 42;
-}
+export * from "./strings";
